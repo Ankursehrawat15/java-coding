@@ -1,0 +1,33 @@
+ANS 1 Product documentation describes the product that is being developed and provides instructions on how to perform various tasks with it. Product documentation can be broken down into system documentation and user documentation.
+
+System documentation  It includes requirements documents, design decisions, architecture descriptions, program source code, and help guides.
+
+User documentation covers manuals that are mainly prepared for end-users of the product and system administrators. User documentation includes tutorials, user guides, troubleshooting manuals, installation, and reference manuals.
+
+Process documentation represents all documents produced during development and maintenance that describe… well, process. The common examples of process documentation are project plans, test schedules, reports, standards, meeting notes, or even business correspondence.
+
+The main difference between process and product documentation is that the first one record the process of development and the second one describes the product that is being developed.
+
+ ANS 2    UNIT TESTING -A unit test is a method for testing a unit - the littlest bit of code that can be consistently segregated in a framework. In most programming dialects, that is a capacity, a subroutine, a strategy or property. The secluded piece of the definition is significant. In his book Working Effectively with Legacy Code writer Michael Feathers expresses that such tests are not unit tests when they depend on outside frameworks: "In the event that it converses with the database, it talks over the system, it contacts the document framework, it requires framework setup, or it can't be run simultaneously as some other test."
+
+
+(B)     CODE COVERAGE - Code inclusion is a measure which portrays the level of which the source code of the program has been tried. It is one type of white box testing which finds the territories of the program not practiced by a lot of experiments. It additionally makes some experiments to build inclusion and deciding a quantitative proportion of code inclusion. Much of the time, code inclusion framework accumulates data about the running system. It additionally joins that with source code data to produce a report about the test suite's code inclusion.
+
+
+(C) BLACK BOX TESTING -  Black-box testing is a testing strategy that ignores the internal mechanism of a system or component and focuses solely on outputs generated in response to selected inputs and execution conditions.
+
+
+ANS 3   Jenkins is an open-source continuous integration tool. It is written using the Java programming language. It facilitates real-time testing and reporting on isolated changes in a larger code base. This software helps developers to quickly find and solve defects in their code base & automate testing of their builds
+
+     
+
+    Gitlab CI is a part of GitLab. It is a web application with an API that stores its state in a database. It manages projects and provides a friendly user interface, besides       offering the advantage of all the features of GitLab. .
+
+     Buildbot is a software development CI which automates the compile/test cycle. It is widely used for many software projects to validate code changes. It provides             distributed, parallel execution of jobs across different platforms.
+
+
+ANS4    
+
+Puppet: Puppet is one of the most widely-used DevOps tools. It permits delivering and releases the technology changes quickly and often. It contains features of versioning, automated testing and continuous delivery.
+
+Docker: Docker is a high-end DevOps tool that enables building, shipping and running distributed applications on multiple systems. It helps assemble the applications quickly and is often suitable for container management.
