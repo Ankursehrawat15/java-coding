@@ -11,7 +11,7 @@ public class Main {
             animals[i].move();
         }
 
-        ShowPetSounds(animals);
+        ShowPetSounds(animal);
     }
 
     public static void ShowPetSounds(IMakesSound[] petNoises) {
