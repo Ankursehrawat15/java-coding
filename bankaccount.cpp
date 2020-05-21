@@ -84,7 +84,7 @@ class curacct:public account{
              ret1=0;
           }
           else{
-             cout<<"\n No penality imposed";
+             cout<<
           }
           return ret1;
       }
