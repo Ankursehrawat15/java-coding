@@ -49,7 +49,7 @@ memoryButton[i].setForeground(Color.RED);
 y+=HEIGHT+V_SPACE;  
 }  
   
-//set Co-ordinates for Special Buttons  
+
 tempX=TOPX+1*(WIDTH+H_SPACE); y=TOPY+1*(HEIGHT+V_SPACE);  
 for(int i=0;i<specialButton.length;i++)  
 {  
@@ -58,7 +58,7 @@ specialButton[i].setForeground(Color.RED);
 tempX=tempX+2*WIDTH+H_SPACE;  
 }  
   
-//set Co-ordinates for Digit Buttons  
+ 
 int digitX=TOPX+WIDTH+H_SPACE;  
 int digitY=TOPY+2*(HEIGHT+V_SPACE);  
 tempX=digitX;  y=digitY;  
@@ -92,7 +92,7 @@ setLayout(null);
 setSize(FRAME_WIDTH,FRAME_HEIGHT);  
 setVisible(true);  
 }  
-//////////////////////////////////  
+
 static String getFormattedText(double temp)  
 {  
 String resText=""+temp;  
@@ -100,20 +100,20 @@ if(resText.lastIndexOf(".0")>0)
     resText=resText.substring(0,resText.length()-2);  
 return resText;  
 }  
-////////////////////////////////////////  
+
 public static void main(String []args)  
 {  
 new MyCalculator("Calculator - JavaTpoint");  
 }  
 }  
   
-/*******************************************/  
+
   
 class MyDigitButton extends Button implements ActionListener  
 {  
 MyCalculator cl;  
   
-//////////////////////////////////////////  
+
 MyDigitButton(int x,int y, int width,int height,String cap, MyCalculator clc)  
 {  
 super(cap);  
@@ -122,13 +122,13 @@ this.cl=clc;
 this.cl.add(this);  
 addActionListener(this);  
 }  
-////////////////////////////////////////////////  
+
 static boolean isInString(String s, char ch)  
 {  
 for(int i=0; i<s.length();i++) if(s.charAt(i)==ch) return true;  
 return false;  
 }  
-/////////////////////////////////////////////////  
+
 public void actionPerformed(ActionEvent ev)  
 {  
 String tempText=((MyDigitButton)ev.getSource()).getLabel();  
@@ -156,7 +156,7 @@ else
 }//actionPerformed  
 }//class defination  
   
-/********************************************/  
+
   
 class MyOperatorButton extends Button implements ActionListener  
 {  
@@ -170,7 +170,7 @@ this.cl=clc;
 this.cl.add(this);  
 addActionListener(this);  
 }  
-///////////////////////  
+
 public void actionPerformed(ActionEvent ev)  
 {  
 String opText=((MyOperatorButton)ev.getSource()).getLabel();  
@@ -202,7 +202,7 @@ if(!opText.equals("="))
     cl.op=opText.charAt(0);  
     return;  
     }  
-// process = button pressed  
+
 switch(cl.op)  
 {  
 case '+':  
