@@ -25,8 +25,8 @@ Label memLabel=new Label(" ",Label.RIGHT);
 final int FRAME_WIDTH=325,FRAME_HEIGHT=325;  
 final int HEIGHT=30, WIDTH=30, H_SPACE=10,V_SPACE=10;  
 final int TOPX=30, TOPY=50;  
-///////////////////////////  
-MyCalculator(String frameText)//constructor  
+ 
+MyCalculator(String frameText)  
 {  
 super(frameText);  
   
@@ -39,7 +39,7 @@ add(displayLabel);
 memLabel.setBounds(TOPX,  TOPY+HEIGHT+ V_SPACE,WIDTH, HEIGHT);  
 add(memLabel);  
   
-// set Co-ordinates for Memory Buttons  
+ 
 tempX=TOPX;   
 y=TOPY+2*(HEIGHT+V_SPACE);  
 for(int i=0; i<memoryButton.length; i++)  
@@ -70,7 +70,7 @@ tempX+=WIDTH+H_SPACE;
 if((i+1)%3==0){tempX=digitX; y+=HEIGHT+V_SPACE;}  
 }  
   
-//set Co-ordinates for Operator Buttons  
+  
 int opsX=digitX+2*(WIDTH+H_SPACE)+H_SPACE;  
 int opsY=digitY;  
 tempX=opsX;  y=opsY;  
