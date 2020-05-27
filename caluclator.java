@@ -228,13 +228,13 @@ cl.displayLabel.setText(MyCalculator.getFormattedText(temp));
 }//actionPerformed  
 }//class  
   
-/****************************************/  
+
   
 class MyMemoryButton extends Button implements ActionListener  
 {  
 MyCalculator cl;  
   
-/////////////////////////////////  
+
 MyMemoryButton(int x,int y, int width,int height,String cap, MyCalculator clc)  
 {  
 super(cap);  
@@ -243,7 +243,7 @@ this.cl=clc;
 this.cl.add(this);  
 addActionListener(this);  
 }  
-////////////////////////////////////////////////  
+
 public void actionPerformed(ActionEvent ev)  
 {  
 char memop=((MyMemoryButton)ev.getSource()).getLabel().charAt(1);  
@@ -270,7 +270,7 @@ case '+':
 }//actionPerformed  
 }//class  
   
-/*****************************************/  
+
   
 class MySpecialButton extends Button implements ActionListener  
 {  
@@ -284,7 +284,7 @@ this.cl=clc;
 this.cl.add(this);  
 addActionListener(this);  
 }  
-//////////////////////  
+ 
 static String backSpace(String s)  
 {  
 String Res="";  
@@ -292,11 +292,11 @@ for(int i=0; i<s.length()-1; i++) Res+=s.charAt(i);
 return Res;  
 }  
   
-//////////////////////////////////////////////////////////  
+
 public void actionPerformed(ActionEvent ev)  
 {  
 String opText=((MySpecialButton)ev.getSource()).getLabel();  
-//check for backspace button  
+
 if(opText.equals("Backspc"))  
 {  
 String tempText=backSpace(cl.displayLabel.getText());  
@@ -306,7 +306,7 @@ else
     cl.displayLabel.setText(tempText);  
 return;  
 }  
-//check for "C" button i.e. Reset  
+
 if(opText.equals("C"))   
 {  
 cl.number=0.0; cl.op=' '; cl.memValue=0.0;  
