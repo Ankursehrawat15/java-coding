@@ -98,7 +98,7 @@ class curacct:public account{
              bal=bal-amt;
           }
           else{
-              cout<<"\n The amount cannot be withdrawn";
+              cout<<"\n The amount can't be withdrawn";
           }
       }
    };
